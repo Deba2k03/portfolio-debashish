@@ -2,11 +2,9 @@
    box-sizing: border-box;
    font-family: 'poppins',sans-serif;
    background-color:lightslategray;
-<<<<<<< HEAD
+
    background-image:url("./1s.jpg");
-=======
-   background-image: url("/back.webp");
->>>>>>> 95edcea73bb6e166e5b1e0714419d6071f4a6074
+
 }
 .content {
     text-align: center;
