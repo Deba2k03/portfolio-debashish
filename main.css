@@ -2,7 +2,7 @@
    box-sizing: border-box;
    font-family: 'poppins',sans-serif;
    background-color:lightslategray;
-   /* background-image: "./1ss.jpg"; */
+   background-image:url("./1s.jpg");
 }
 .content {
     text-align: center;
