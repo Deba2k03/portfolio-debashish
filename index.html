@@ -1,86 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-Debashish</title>
-    <link rel="stylesheet" href="./main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Portfolio</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  margin: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.portfolio-item {
+  margin-bottom: 2rem;
+}
+
+.portfolio-item h3 {
+  margin-top: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    justify-content: flex-end;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  section {
+    width: 50%;
+  }
+  
+  .portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-item {
+    width: 50%;
+  }
+}
+
+  </style>
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
     <section id="home">
-    <!-- <img src="1s.jpg" alt="" > -->
-    <header>
-        <nav class="menu">
-            <a href="#home">home</a>
-            <a href="#games">contact</a>
-            <a href="#art">art</a>
-            <a href="#websites">websites</a>
-            <a href="#about">about</a>
-            <a href="#repos">repos</a>
-            <a href="#resume">resume</a>
-        </nav>
-        <section class="content">
-        <div class="sts">Hello, I'm</div>
-        <div class="name"><b>Debashish Sahu</b></div>
-        <div class="call-name">call me Dev</div>
-        <div class="sds">and this is my resume</div>
-        </section>
-    </header>
-    <main>
-        <div class="social-icons">
-            <a href="https://www.twitter.com">
-                <i class="fab fa-twitter fa-2x"></i>
-            </a>
-            <a href="https://www.facebook.com">
-                <i class="fab fa-facebook fa-2x"></i>
-            </a>
-            <a href="https://www.instagram.com">
-                <i class="fab fa-instagram fa-2x"></i>
-            </a>
-            <a href="https://www.github.com">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
-            </div>
-    </main>
-    <footer>&copy; Copyright 2022</footer>
-    <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
-    <script src="js/main.js"></script>
-</section>
-<section id="games">
-    <div class="games">
-        <h1>Contact Me</h1>
-    </div>
-</section>
-<section id="art">
-    <div class="games">
-        <h1>The content will be post soon</h1>
-    </div>
-</section>
-<section id="websites">
-    <div class="games">
-        <h1>The content will be post soon</h1>
-    </div>
-</section>
-<section id="about">
-    <div class="games">
-        <h1>The content will be post soon</h1>
-    </div>
-</section>
-<section id="about">
-    <div class="games">
-        <h1>The content will be post soon</h1>
-    </div>
-</section>
-<section id="repos">
-    <div class="games">
-        <h1>The content will be post soon</h1>
-    </div>
-</section>
-<section id="resume">
-    <div class="games">
-        <h1>The content will be post soon</h1>
-    </div>
-</section>
+      <h1>Welcome to my portfolio</h1>
+      <p>My name is [Your Name], and I am a [Your Profession].</p>
+    </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>[Write a brief description about yourself]</p>
+    </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-items">
+        <div class="portfolio-item">
+          <img src="path/to/image" alt="Project Name">
+          <h3>Project Name</h3>
+          <p>Project Description</p>
+        </div>
+        <!-- Add more portfolio items here -->
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="submit-form.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 My Portfolio</p>
+  </footer>
+  <script>
+    // Add smooth scrolling to internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+  </script>
 </body>
 </html>
